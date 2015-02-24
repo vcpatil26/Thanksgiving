@@ -1,0 +1,54 @@
+mysql> show tables;
++------------------------+
+| Tables_in_software_eng |
++------------------------+
+| GROUP_DETAILS          |
+| LOGIN_DETAILS          |
+| MEMBER_DETAILS         |
+| TASK_DETAILS           |
++------------------------+
+4 rows in set (0.00 sec)
+
+mysql> select * from GROUP_DETAILS;
++----------+---------------+
+| Group_ID | Group_Name    |
++----------+---------------+
+| A534     | Park Doral    |
+| B201     | Fountain Park |
++----------+---------------+
+2 rows in set (0.00 sec)
+
+mysql> select * from LOGIN_DETAILS;
++-----------+----------+----------------------+----------+
+| FirstName | LastName | Email_ID             | Password |
++-----------+----------+----------------------+----------+
+| Jagdeesh  | Shravan  | jshravan@indiana.edu | 456123   |
+| Paven     | Vivek    | pvivekan@indiana.edu | 123456   |
+| Varun     | Patel    | vcpatel@indiana.edu  | 654321   |
++-----------+----------+----------------------+----------+
+3 rows in set (0.00 sec)
+
+mysql> select * from MEMBER_DETAILS;
++----------------------+----------+--------------------+--------------+---------------+
+| Email_ID             | Group_ID | Weekly_task_points | Total_points | Creation_Date |
++----------------------+----------+--------------------+--------------+---------------+
+| jshravan@indiana.edu | B201     |                  5 |           85 | 2014-12-07    |
+| vcpatel@indiana.edu  | B201     |                 20 |           95 | 2014-12-07    |
+| pvivekan@indiana.edu | B201     |                 10 |           45 | 2014-12-07    |
++----------------------+----------+--------------------+--------------+---------------+
+3 rows in set (0.00 sec)
+
+mysql> select * from TASK_DETAILS;
++---------+----------------------+-------------+-------------+----------------------+----------------------+----------+---------------+-----------+
+| Task_ID | Task_Description     | Task_Status | Task_Points | Assigned_To          | Assigned_By          | Group_ID | Creation_Date | Recurrent |
++---------+----------------------+-------------+-------------+----------------------+----------------------+----------+---------------+-----------+
+|     500 | Shopping at Kroger   | Pending     |          50 | pvivekan@indiana.edu | Varun                | B201     | 2014-12-12    | daily     |
+|     600 | Paying current bill  | Pending     |          30 | vcpatel@indiana.edu  | Paven                | B201     | 2014-12-12    | daily     |
+|     700 | Paying Internet Bill | complete    |          40 | jshravan@indiana.edu | Paven                | B201     | 2014-11-06    | no        |
+|      19 | clean the desk       | Pending     |          25 | vcpatel@indiana.edu  | pvivekan@indiana.edu | B201     | 2014-11-05    | no        |
+|      90 | Buy from Wal-Mart    | Pending     |          45 | pvivekan@indiana.edu | pvivekan@indiana.edu | B201     | 2014-12-12    | Daily     |
+|      48 | Clean the kitchen    | complete    |          45 | pvivekan@indiana.edu | pvivekan@indiana.edu | B201     | 2014-12-09    | weekly    |
++---------+----------------------+-------------+-------------+----------------------+----------------------+----------+---------------+-----------+
+6 rows in set (0.00 sec)
+
+mysql> 
