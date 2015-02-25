@@ -1,0 +1,32 @@
+body {
+  min-height: 700px;
+   
+}
+
+#btn {
+width: 20em;
+height: 7em;
+}
+
+#btn2 {
+width: 20em;
+height: 7em;
+color: blue;
+}
+
+#field {
+    margin-bottom:20px;
+}
+.carousel .item {
+    width: 100%; /*slider width*/
+    max-height: 700px; /*slider height*/
+}
+.carousel .item img {
+    width: 100%; /*img width*/
+}
+/*full width container*/
+@media (max-width: 1000px) {
+    .block {
+ 
+    }
+}
