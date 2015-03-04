@@ -1,0 +1,47 @@
+We have conduct Quality-assurance with Team One, in order to help each other improve the code and be successful.
+we try to test their application, view their code and view their previous Videos.
+//////////////////////////////////////////////////////////////////////////////////
+Before we get started, Here's few steps to set your machines up:
+1) Install pip - A python package installer
+http://www.pip-installer.org/en/latest/installing.html
+
+2) Install Virtualenv and create a virtualenv on your machine
+pip install virtualenv
+
+3) Check out git code to the directory where virtualenv was created.
+
+4) Activate virtualenv using the command
+source bin/activate
+
+5) Install requirements using:
+pip install -r django_app_requirements.txt
+
+Some important django commands: 
+
+Once you go into the directory, say 
+./scripts/activate
+
+To start the server: 
+python manage.py runserver
+
+For database changes to be reflected, 
+run :
+python manage.py makemigrations
+python manage.py migrate
+//////////////////////////////////////////////////////////////////////////////////
+After that I logged in the homepage of their application called "Task Sharing", here you can view and add "contacts", 
+and view and add "Groups" with the taps on the top. In the group you are able to add tasks and assign "points" to them.
+The tasks can be one-time tasks or recurring tasks.
+When you finish a task, you can go to "Finish task" and mark it as finished.
+/////////////////////////////////////////////////////////////////////////////////
+There are something can be done to make the application better:
+1. There should be more restricting on the Task Naming and Time range. For example the start and end date of recurring tasks have
+a Year range from 1990 to 2015. This can cause problem after 2015.
+
+2. Whether the task is available is decided by the time, but this time is the computer system time but not the universal time. 
+It is better to set it as universal time.
+
+3. For new users I hope there to be more information on the homepage, and more information about how to assign one-time tasks 
+recurring tasks.
+
+4.For iteration 3, most task have been finished.
